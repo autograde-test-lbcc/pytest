@@ -1,5 +1,10 @@
+import pytest
 import mymath
 
-assert add(3,2) == 5
 
-assert subtract(3,2) == 1
+def test_add():
+    assert mymath.add(3, 2) == 5
+
+
+def test_subtract():
+    assert mymath.subtract(3, 2) == 1
